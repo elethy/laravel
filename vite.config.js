@@ -8,4 +8,11 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        rollupOptions: {
+            output: {
+                assetFileNames: 'assets/[name][extname]', // アセットの出力パスを指定
+            },
+        },
+    }
 });
